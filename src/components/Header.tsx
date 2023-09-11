@@ -6,7 +6,7 @@ export const Header = () => {
       <h2>Logo Here</h2>
       <div>
         <Link to={'/'}>Home</Link>
-        <Link to={'/'}>
+        <Link to={'/cart'}>
           <FiShoppingCart />
           <p>0</p>
         </Link>

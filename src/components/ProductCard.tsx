@@ -1,5 +1,5 @@
 export type ProductCardProps = {
-  id: number
+  id: string
   name: string
   price: number
   imgSrc: string
