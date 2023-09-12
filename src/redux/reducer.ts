@@ -1,12 +1,22 @@
 import { createReducer } from '@reduxjs/toolkit'
-import { Coins } from '../types/Coin'
 
-type firstReducerState = {
-  coins: Coins[]
+type CartReducerState = {
+  cartItems: any[]
+  subtotal: string
+  shipping: string
+  tax: string
+  total: string
 }
-const initialState: firstReducerState = {
-  coins: [],
+
+const initialState: CartReducerState = {
+  cartItems: [],
+  subtotal: '0',
+  shipping: '0',
+  tax: '0',
+  total: '0',
 }
-export const firstReducer = createReducer(initialState, {
-  firstCase: () => {},
+export const cartReducer = createReducer(initialState, {
+  addToCart: (state, action) => {
+    const item = action.payload
+  },
 })

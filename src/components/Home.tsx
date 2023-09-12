@@ -1,3 +1,4 @@
+import toast from 'react-hot-toast'
 import { ProductCard } from '.'
 
 const img1 =
@@ -21,6 +22,7 @@ export const Home = () => {
 
   const addToCartHandler = (options: any) => {
     console.log(options)
+    toast.success('Added to Cart')
   }
   return (
     <div className='home'>
